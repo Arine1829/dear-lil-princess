@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Good Morning, Amara 🌷</title>
+<meta name="theme-color" content="#481426">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="floaters" id="floaters" aria-hidden="true"></div>
+
+<!-- 2. OPENING SCREEN -->
+<section class="intro" id="intro" aria-labelledby="introTitle">
+  <div class="gift" aria-hidden="true"><span class="gift-lid">🎀</span><span class="gift-box">💌</span></div>
+  <h1 id="introTitle">Good Morning, My Pretty Wife 🌷</h1>
+  <p>Someone has prepared a little something for you...</p>
+  <button class="btn" id="openBtn" type="button">Open Your Morning Surprise ♡</button>
+</section>
+
+<main id="main" class="main" hidden>
+  <header class="hero">
+    <p class="hero-small">for Amara, from your husband</p>
+    <h2>Good morning, meri jaan 🌷</h2>
+    <a class="btn btn-ghost" href="#letter">Read your letter ↓</a>
+  </header>
+
+  <!-- 3. LOVE LETTER -->
+  <section id="letter" class="sec" aria-labelledby="letterTitle">
+    <h2 id="letterTitle" class="sec-title">A Little Good Morning Message</h2>
+    <article class="letter">
+      <p>Good morning meri jaan my lil princess🌷 I wish aapki morning bohot beautiful ho rahi ho. Mene socha aj subah subah aapko ek proper long message kru, cs bs short "good morning" se meri feelings pure tarah se express nhi hothe.</p>
+      <p>Apko pta he na me aapse kitna pyaar krta hu? Bohot zyada... Allah kasam, bohot pagal hu me apke liye 😭 Chahe hum kitne bhi dur he, aap hamesha mere mind me hothe ho 24/7. Subah uthte he sabse pehle aapka khayal aata he, or raat ko sone se pehle bhi bs aap.</p>
+      <p>Mera dil krta he me wahan ajau apke paas jldi seye distance khtm kru apse sath morning ho apke sath night hayeeeee, bs aapke paas... Subah subah aapkacute sa sleepy face dekhna apke cheeks pr kiss krna apko seduucing voice me good morning bolnaaaa heeee, aapse baatein krnaa.. Bs ek normal sa morning, bs aapke sath. Wohi mere liye sabse best he 🥹</p>
+      <p>Or yk mujhe video calls me aapko dekhna kitna pasand he? Me bs aapko dekhta rehta hu, aapki baatein sunta hu, or mujhe pta bhi nhi chalta time kaise khtm hojata hee. Aapka chehra dekh ke mera poora din acha ho jata he 🫠</p>
+      <p>Mujhe pta he kabhi kabhi aap busy hothe hein or mera mood kharab ho jata he, but please don't overthink. Mera pyaar kam nhi hota. Me hamesha aapke liye free hu, chahe kitna bhi busy hu. Aap meri priority hein, always and only priority.</p>
+      <p>Your so Beautiful, and your so precious for meh, or mere liye bohot bohot important hein. YOUR MY EVERYTHING 💗 Mujhe nhi pta me kya krta agar aap meri life me na hothe.</p>
+      <p>Me aksar apni future ki baatein sochta hu. Hamari family, hamara chota sa peaceful ghar, normal si everyday life. Aapke sath har chota moment bhi special lagta he. Bs wo din jaldi aa jaye.</p>
+      <p>Please kabhi meri love pe doubt mat kriyega. Me aapko reassurance deta rahunga, baar baar, jitni baar zarurat ho. Aapko kabhi ye feel nhi hone dunga ke aap alone hein 🫶🏻</p>
+      <p>I Love you soooooooooooooooo much meri jaan ❤️ Ab jaldi se smile krdein, warna me yahan se pta laga lunga ke aap smile kyun nhi kr rahi 😭 Have the prettiest day, Mrs. Mine 🌷</p>
+    </article>
+  </section>
+
+  <!-- DAILY LOVE NOTE -->
+  <section id="daily" class="sec" aria-labelledby="dailyTitle">
+    <h2 id="dailyTitle" class="sec-title">Your Daily Little Love Note 💌</h2>
+    <div class="card daily">
+      <span class="deco d1" aria-hidden="true">🌷</span><span class="deco d2" aria-hidden="true">♡</span><span class="deco d3" aria-hidden="true">✦</span>
+      <p class="daily-hello">Good morning, Meri Januuu My Princess "Amara jiii".</p>
+      <p class="daily-date" id="dailyDate"></p>
+      <p class="daily-msg" id="dailyMsg" aria-live="polite"></p>
+      <p class="daily-count" id="dailyCount"></p>
+      <button class="btn" id="moreLove" type="button" aria-expanded="false" aria-controls="bonus">A Little More Love ♡</button>
+      <p class="bonus" id="bonus" hidden></p>
+    </div>
+  </section>
+
+  <!-- 4. QUIZ -->
+  <section id="quiz" class="sec" aria-labelledby="quizTitle">
+    <h2 id="quizTitle" class="sec-title">Okay Mrs. Mine, Time for a Little Game 😭❤️</h2>
+    <p class="sec-sub">Let's see how well you know your husband.</p>
+    <div class="card quiz">
+      <p class="quiz-progress" id="quizProgress"></p>
+      <h3 id="quizQ"></h3>
+      <div class="options" id="quizOpts" role="group" aria-labelledby="quizQ"></div>
+      <p class="quiz-reply" id="quizReply" aria-live="polite"></p>
+      <button class="btn" id="quizNext" type="button" hidden>Next ♡</button>
+      <div class="quiz-done" id="quizDone" hidden>
+        <div class="trophy" aria-hidden="true">🏆</div>
+        <p>Congratulations, Mrs. Mine! You've officially passed your husband test. 🏆❤️</p>
+        <button class="btn btn-ghost" id="quizAgain" type="button">Play again</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. GIFTS -->
+  <section id="gifts" class="sec" aria-labelledby="giftTitle">
+    <h2 id="giftTitle" class="sec-title">Okay, now choose your little surprise.</h2>
+    <div class="gifts">
+      <button class="gift-card" type="button" aria-expanded="false" data-msg="Aapko pta he I could write a thousand paragraphs about you and phir bhi kam par jayenge. I love you more than I can explain."><span class="gc-front"><b>💌</b>A Love Note</span><span class="gc-back"></span></button>
+      <button class="gift-card" type="button" aria-expanded="false" data-msg="Apki smile, apki eyes, apki voice, everything about you is so special to me. I swear I could admire you forever."><span class="gc-front"><b>🌷</b>A Compliment</span><span class="gc-back"></span></button>
+      <button class="gift-card" type="button" aria-expanded="false" data-msg="Muahhhhh 😭❤️ ab itni door hein toh virtual kisses se he kaam chalana parega. But one day I'll give you all the kisses I've been saving."><span class="gc-front"><b>🫶🏻</b>A Virtual Kiss</span><span class="gc-back"></span></button>
+    </div>
+  </section>
+
+  <!-- 6. FUTURE -->
+  <section id="future" class="sec" aria-labelledby="futTitle">
+    <h2 id="futTitle" class="sec-title">Things I Can't Wait To Do With You ♡</h2>
+    <ul class="future">
+      <li>🌅 Wake up next to you.</li><li>🥞 Have breakfast together.</li>
+      <li>🌸 Go on random little dates.</li><li>🎬 Watch movies while sitting together.</li>
+      <li>📸 Take silly pictures.</li><li>✈️ Travel together.</li>
+      <li>🫶🏻 Make memories over the smallest things.</li><li>🏡 Build our peaceful little world.</li>
+    </ul>
+    <p class="future-note">Yk aapke sath future ki itni sari cheezein imagine krta hu. Like literally har choti choti cheez. I don't just think about the big moments, mujhe apke sath normal everyday life bhi chahiye. Bs aap ho and me hu and bohot sari memories. That's all I want. ❤️</p>
+  </section>
+
+  <!-- 7. GOODBYE -->
+  <section id="bye" class="sec bye" aria-labelledby="byeTitle">
+    <h2 id="byeTitle" class="sec-title">One Last Thing, My Love...</h2>
+    <p>Aap chahe kitni bhi busy ho, kitna bhi overthink krein, ya kabhi apka mood acha na ho, please remember one thing. You are loved. You're appreciated. And you never have to question whether you matter to me.</p>
+    <p>I'll keep choosing you in all the little ways, har roz. I love you so so much meri jaan. Now go have a beautiful day and don't forget to miss your husband a little. 😭❤️</p>
+    <button class="btn" id="kissBtn" type="button">Send Your Husband a Kiss 💋</button>
+    <p class="kiss-msg" id="kissMsg" aria-live="polite"></p>
+  </section>
+  <footer class="foot">Made with love, just for youhh ♡</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
